@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sachin Kumar | Portfolio</title>
+<title>Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,11 +18,10 @@
 
 <nav>
 
-<h2 class="logo">Sachin.dev</h2>
+<h2 id="logo"></h2>
 
-<ul id="menu">
+<ul>
 
-<li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
@@ -30,11 +29,79 @@
 
 </ul>
 
-<div class="menu-btn" onclick="toggleMenu()">☰</div>
-
 </nav>
 
 </header>
+
+<section class="hero">
+
+<div class="glass">
+
+<img id="profile" class="profile">
+
+<h1 id="name"></h1>
+
+<p id="title"></p>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="glass">
+
+<h2>About</h2>
+
+<p id="aboutText"></p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="glass">
+
+<h2>Skills</h2>
+
+<div id="skillsContainer" class="skills"></div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div id="projectsContainer" class="project-grid"></div>
+
+</section>
+
+<section id="contact">
+
+<div class="glass">
+
+<h2>Contact</h2>
+
+<div id="socialLinks"></div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p id="footerText"></p>
+
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html></header>
 
 <section id="home" class="hero">
 
