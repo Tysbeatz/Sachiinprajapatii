@@ -5,12 +5,18 @@ box-sizing:border-box;
 font-family:sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 
 background:linear-gradient(135deg,#1e3a8a,#9333ea);
 color:white;
 
 }
+
+/* NAVBAR */
 
 header{
 
@@ -35,6 +41,181 @@ list-style:none;
 }
 
 a{
+
+color:white;
+text-decoration:none;
+
+}
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+cursor:pointer;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+/* GLASS UI */
+
+.glass{
+
+background:rgba(255,255,255,0.1);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,0.2);
+
+border-radius:15px;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+/* SKILLS */
+
+.skills{
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+justify-content:center;
+
+}
+
+.skills span{
+
+background:rgba(255,255,255,0.2);
+
+padding:10px 15px;
+
+border-radius:20px;
+
+}
+
+/* PROJECTS */
+
+.title{
+
+text-align:center;
+margin-top:50px;
+
+}
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+padding:40px;
+
+}
+
+.card{
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.05);
+
+}
+
+/* CONTACT */
+
+input,textarea{
+
+width:100%;
+
+margin-top:10px;
+
+padding:10px;
+
+border:none;
+
+border-radius:8px;
+
+}
+
+button{
+
+margin-top:15px;
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:20px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+ul{
+
+display:none;
+flex-direction:column;
+align-items:center;
+
+}
+
+ul.show{
+
+display:flex;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.hero{
+
+height:auto;
+padding:100px 20px;
+
+}
+
+.project-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}a{
 
 color:white;
 text-decoration:none;
